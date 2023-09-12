@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Or Not</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg-dark text-white text-center p-5 w-75 container" >
+        <h1 class="mt-2 ">Prime Number Or Not</h1>
+        <input class="mt-4 form-control w-50 container" type="text" placeholder="Enter Number" id="n1"><br>
+        <button  class="mt-3 btn btn-danger" onclick="primeOrnot()">CHECK</button>
+    </div>
+</body>
+<script>
+    function primeOrnot(){
+       prime=parseInt(n1.value)
+            for(i=2;i<prime;i++){
+                  if(prime%i==0){
+                    break
+                  }
+            }
+            if(prime==i){
+                alert( `${prime} is a prime number`)
+
+            }
+            else{
+                alert( `${prime} is not a prime number`)
+
+            }
+
+        }
+       
+</script>
+</html>
